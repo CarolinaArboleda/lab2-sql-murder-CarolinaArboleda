@@ -39,3 +39,10 @@ WHERE person_id = 16371;
 SELECT *
 FROM drivers_license
 WHERE plate_number LIKE '%H42W%';
+
+
+-- Asesino final
+
+SELECT *
+FROM person
+WHERE name = 'Jeremy Bowers';
