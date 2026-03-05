@@ -46,3 +46,13 @@ WHERE plate_number LIKE '%H42W%';
 SELECT *
 FROM person
 WHERE name = 'Jeremy Bowers';
+
+
+-- Verificación final del asesino
+
+SELECT *
+FROM person
+WHERE name = 'Jeremy Bowers';
+
+-- Resultado: Jeremy Bowers
+-- Este resultado coincide con la solución oficial del ejercicio SQL Murder Mystery.
