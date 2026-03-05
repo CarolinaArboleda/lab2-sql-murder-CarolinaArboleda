@@ -32,3 +32,10 @@ WHERE person_id = 14887;
 SELECT *
 FROM interview
 WHERE person_id = 16371;
+
+
+-- Paso 5 sospechoso
+
+SELECT *
+FROM drivers_license
+WHERE plate_number LIKE '%H42W%';
