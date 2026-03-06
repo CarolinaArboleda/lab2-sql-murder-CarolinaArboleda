@@ -3,7 +3,9 @@ Este es el laboratorio 2 del curso de estructuras de datos y laboratorio. Labora
 
 # Datos de la detective
 Nombre: Carolina Arboleda Guzmán 
+
 Actividad: Laboratorio 2 – Introducción a SQL y documentación en GitHub
+
 Caso: SQL Murder Mystery
 
 # RESUMEN DEL CASO
