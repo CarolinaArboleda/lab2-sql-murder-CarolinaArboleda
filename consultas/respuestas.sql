@@ -4,3 +4,17 @@ FROM crime_scene_report
 WHERE date = 20180115
 AND city = 'SQL City'
 AND type = 'murder';
+
+
+-- Paso 2: Identificar testigos
+SELECT *
+FROM person
+WHERE address_street_name = 'Northwestern Dr'
+ORDER BY address_number DESC
+LIMIT 1;
+
+
+SELECT *
+FROM person
+WHERE name LIKE 'Annabel%'
+AND address_street_name = 'Franklin Ave';
