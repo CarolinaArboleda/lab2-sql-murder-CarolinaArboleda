@@ -50,3 +50,9 @@ WHERE license_id IN (183779, 423327, 664760);
 SELECT *
 FROM get_fit_now_member
 WHERE person_id IN (51739, 67318, 78193);
+
+
+--Paso 8: asesino identificado 
+
+INSERT INTO solution VALUES (1, 'Jeremy Bowers');
+SELECT value FROM solution;
