@@ -38,3 +38,9 @@ WHERE person_id = 16371;
 SELECT *
 FROM drivers_license
 WHERE plate_number LIKE '%H42W%';
+
+
+--Paso 6: Filtar los dueños de las licencias (id del paso anterior)
+SELECT *
+FROM person
+WHERE license_id IN (183779, 423327, 664760);
