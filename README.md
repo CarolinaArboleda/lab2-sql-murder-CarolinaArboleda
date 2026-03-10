@@ -11,7 +11,7 @@ Caso: SQL Murder Mystery
 # RESUMEN DEL CASO
 El 15 de enero de 2018 ocurrió un asesinato en SQL City. A partir del reporte del crimen se inició una investigación analizando diferentes tablas de la base de datos mediante consultas SQL. Después de revisar los reportes, identificar testigos, analizar entrevistas y rastrear pistas relacionadas con licencias de conducir, se logró identificar al culpable. El asesino es Jeremy Bowers.
 
-#Paso 1: Buscar el reporte del crimen
+# Paso 1: Buscar el reporte del crimen
 
 Qué hice:
 Consulté la tabla crime_scene_report para encontrar el reporte del asesinato ocurrido el 15 de enero de 2018 en SQL City.
@@ -20,7 +20,7 @@ Consulté la tabla crime_scene_report para encontrar el reporte del asesinato oc
 Por qué:
 Era la información inicial del caso y permitía conocer las primeras pistas y los testigos del crimen.
 
-#Paso 2: Identificar a los testigos
+# Paso 2: Identificar a los testigos
 
 Qué hice:
 Busqué en la tabla person a las personas que coincidían con las pistas del reporte del crimen. Primero busqué a la persona que vive en Northwestern Dr, ordenando las direcciones para encontrar la casa con el número más alto. Luego busqué a una persona llamada Annabel que vive en Franklin Ave.
@@ -31,7 +31,7 @@ Busqué en la tabla person a las personas que coincidían con las pistas del rep
 Por qué:
 El reporte del crimen indicaba que dos testigos presenciaron el asesinato, por lo que era necesario identificarlos para revisar sus entrevistas.
 
-#Paso 3: Leer la entrevista de Morty
+# Paso 3: Leer la entrevista de Morty
 
 Qué hice:
 Consulté la tabla interview usando el person_id del primer testigo.
@@ -40,7 +40,7 @@ Consulté la tabla interview usando el person_id del primer testigo.
 Por qué:
 Las entrevistas contienen información clave sobre el sospechoso y permiten obtener nuevas pistas para continuar la investigación.
 
-#Paso 4: Leer la entrevista de Annabel
+# Paso 4: Leer la entrevista de Annabel
 
 Qué hice:
 Busqué en la tabla interview la entrevista del segundo testigo.
@@ -50,7 +50,7 @@ Busqué en la tabla interview la entrevista del segundo testigo.
 Por qué:
 Esta entrevista proporciona más detalles sobre el sospechoso, lo que ayuda a seguir el rastro mediante otras tablas de la base de datos.
 
-#Paso 5: Buscar sospechosos por placa del vehículo
+# Paso 5: Buscar sospechosos por placa del vehículo
 
 Qué hice:
 Consulté la tabla drivers_license para encontrar licencias de conducir cuya placa contuviera el patrón H42W.
@@ -60,7 +60,7 @@ Consulté la tabla drivers_license para encontrar licencias de conducir cuya pla
 Por qué:
 En la entrevista de los testigos se menciona una parte de la placa del vehículo del sospechoso, por lo que esta consulta permite reducir la lista de posibles culpables.
 
-#Paso 6: Encontrar a las personas dueñas de esas licencias
+# Paso 6: Encontrar a las personas dueñas de esas licencias
 
 Qué hice:
 Busqué en la tabla person a las personas que tienen las licencias de conducir encontradas en el paso anterior.
@@ -70,7 +70,7 @@ Busqué en la tabla person a las personas que tienen las licencias de conducir e
 Por qué:
 Esto permite identificar quiénes son los dueños de esos vehículos y convertir las licencias encontradas en posibles sospechosos reales.
 
-#Paso 7: Verificar si alguno pertenece al gimnasio
+# Paso 7: Verificar si alguno pertenece al gimnasio
 
 Qué hice:
 Consulté la tabla get_fit_now_member para verificar si alguno de los sospechosos era miembro del gimnasio mencionado en la entrevista.
@@ -80,7 +80,7 @@ Consulté la tabla get_fit_now_member para verificar si alguno de los sospechoso
 Por qué:
 Uno de los testigos mencionó que el sospechoso era miembro del gimnasio Get Fit Now, por lo que esta consulta permitió reducir aún más los sospechosos.
 
-#Paso 8: Identificar al asesino
+# Paso 8: Identificar al asesino
 
 Qué hice:
 Registré en la tabla solution el nombre del sospechoso identificado como asesino.
@@ -94,7 +94,7 @@ La plataforma utiliza esta consulta para verificar si el sospechoso identificado
 
 #Segunda parte del caso (autor intelectual)
 
-#Paso 9: Leer la entrevista del asesino
+# Paso 9: Leer la entrevista del asesino
 
 Qué hice:
 Consulté la entrevista de Jeremy Bowers en la tabla interview.
@@ -105,7 +105,7 @@ Por qué:
 En esta entrevista el asesino revela que fue contratado por otra persona, lo que indica que existe un autor intelectual detrás del crimen.
 
 
-#Paso 10: Buscar licencias que coincidan con la descripción
+# Paso 10: Buscar licencias que coincidan con la descripción
 
 Qué hice:
 Busqué en la tabla drivers_license personas que coincidan con la descripción dada en la entrevista: mujer, cabello rojo, altura entre 65 y 67 pulgadas, conduce un Tesla Model S
@@ -116,7 +116,7 @@ Busqué en la tabla drivers_license personas que coincidan con la descripción d
 Por qué:
 Estas características permitían identificar posibles sospechosas que coincidan con la descripción dada por el asesino.
 
-#Paso 11: Obtener los nombres de las sospechosas
+# Paso 11: Obtener los nombres de las sospechosas
 
 Qué hice:
 Consulté la tabla person para conocer los nombres de las personas que tienen esas licencias de conducir.
@@ -126,7 +126,7 @@ Consulté la tabla person para conocer los nombres de las personas que tienen es
 Por qué:
 Esto permitió convertir las licencias encontradas en personas específicas que podrían ser la autora intelectual del crimen.
 
-#Paso 12: Verificar quién asistió tres veces al concierto
+# Paso 12: Verificar quién asistió tres veces al concierto
 
 Qué hice:
 Conté en la tabla facebook_event_checkin cuántas veces cada sospechosa asistió al SQL Symphony Concert en diciembre de 2017.
@@ -137,7 +137,7 @@ Conté en la tabla facebook_event_checkin cuántas veces cada sospechosa asisti�
 Por qué:
 El asesino mencionó que la persona que lo contrató asistió tres veces a ese concierto, por lo que esta consulta permitió identificar a la persona correcta.
 
-#Paso 13: Identificar a la culpable final
+# Paso 13: Identificar a la culpable final
 
 Qué hice:
 Registré en la tabla solution el nombre Miranda Priestly como la responsable del crimen.
