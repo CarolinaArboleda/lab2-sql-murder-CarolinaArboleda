@@ -25,3 +25,9 @@ AND address_street_name = 'Franklin Ave';
 SELECT *
 FROM interview
 WHERE person_id = 14887;
+
+
+-- Paso 4: Leer entrevista de Annabel
+SELECT *
+FROM interview
+WHERE person_id = 16371;
