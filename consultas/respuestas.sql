@@ -44,3 +44,9 @@ WHERE plate_number LIKE '%H42W%';
 SELECT *
 FROM person
 WHERE license_id IN (183779, 423327, 664760);
+
+
+-- Paso 7: filtrar si alguno pertenece al gimnasio (id anterior) 
+SELECT *
+FROM get_fit_now_member
+WHERE person_id IN (51739, 67318, 78193);
