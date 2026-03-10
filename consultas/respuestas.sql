@@ -64,3 +64,13 @@ SELECT value FROM solution;
 SELECT *
 FROM interview
 WHERE person_id = 67318;
+
+
+--Paso 10: licencias que coincidan con la descripción
+SELECT *
+FROM drivers_license
+WHERE hair_color = 'red'
+AND gender = 'female'
+AND car_make = 'Tesla'
+AND car_model = 'Model S'
+AND height BETWEEN 65 AND 67;
