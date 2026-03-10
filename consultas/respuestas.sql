@@ -56,3 +56,11 @@ WHERE person_id IN (51739, 67318, 78193);
 
 INSERT INTO solution VALUES (1, 'Jeremy Bowers');
 SELECT value FROM solution;
+
+
+--Resolver el caso completo 
+
+--Paso 9: entrevista del asesino 
+SELECT *
+FROM interview
+WHERE person_id = 67318;
