@@ -74,3 +74,9 @@ AND gender = 'female'
 AND car_make = 'Tesla'
 AND car_model = 'Model S'
 AND height BETWEEN 65 AND 67;
+
+
+--Paso 11: nombres de las sospechosas
+SELECT *
+FROM person
+WHERE license_id IN (202298, 291182, 918773);
