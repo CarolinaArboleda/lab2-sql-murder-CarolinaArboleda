@@ -144,9 +144,9 @@ Registré en la tabla solution el nombre Miranda Priestly como la responsable de
 
 <img width="1094" height="362" alt="paso13 - culpable final" src="https://github.com/user-attachments/assets/3aacbdb7-0e48-4b9a-8ec5-9e34c9f260f8" />
 
-
-# Conclusión: Este ejercicio me permitió reforzar habilidades de análisis de datos y demostrar cómo SQL puede utilizarse para investigar y resolver problemas mediante el análisis de información almacenada en bases de datos.
-
-
 Por qué:
 La plataforma verifica con esta consulta si la persona identificada es la verdadera autora intelectual del asesinato.
+
+
+# Conclusión:
+Este ejercicio me permitió reforzar habilidades de análisis de datos y demostrar cómo SQL puede utilizarse para investigar y resolver problemas mediante el análisis de información almacenada en bases de datos.
