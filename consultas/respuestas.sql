@@ -18,3 +18,10 @@ SELECT *
 FROM person
 WHERE name LIKE 'Annabel%'
 AND address_street_name = 'Franklin Ave';
+
+
+
+-- Paso 3: Leer entrevista de Morty
+SELECT *
+FROM interview
+WHERE person_id = 14887;
