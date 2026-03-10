@@ -80,3 +80,12 @@ AND height BETWEEN 65 AND 67;
 SELECT *
 FROM person
 WHERE license_id IN (202298, 291182, 918773);
+
+
+--paso 12: quién fue 3 veces al concierto
+SELECT person_id, COUNT(*)
+FROM facebook_event_checkin
+WHERE event_name = 'SQL Symphony Concert'
+AND date LIKE '201712%'
+GROUP BY person_id
+HAVING COUNT(*) = 3;
