@@ -89,3 +89,8 @@ WHERE event_name = 'SQL Symphony Concert'
 AND date LIKE '201712%'
 GROUP BY person_id
 HAVING COUNT(*) = 3;
+
+
+--paso 13: Culpable
+INSERT INTO solution VALUES (1, 'Miranda Priestly');
+SELECT value FROM solution;
